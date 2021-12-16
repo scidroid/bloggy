@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.btn-black {
+  @apply bg-black text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-white {
+  @apply bg-white text-black font-bold py-2 px-4 rounded;
+}
+
+/*
+I NEED TO OVERWRITE THE NORMAL COMPONENTS STYLES, PLEASE DON'T KILL ME FOR USING !IMPORTANTS
+*/
+
+.cl-component,
+.cl-sign-in,
+.cl-sign-up {
+  box-shadow: none !important;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.cl-auth-form-header {
+  display: none !important;
+  height: 0 !important;
+}
+
+.cl-primary-button,
+.cl-oauth-button,
+.cl-sign-in-button,
+.cl-sign-up-button,
+.cl-accounts-manager-button,
+.cl-sign-out-all-button {
+  @apply bg-black text-white font-bold py-2 px-4 rounded !important;
+}
+
+.cl-oauth-button svg,
+.cl-accounts-manager-button svg,
+.cl-sign-out-all-button svg {
+  display: none !important;
+}
+
+.cl-label {
+  @apply text-sm font-normal !important;
+}
+
+.cl-component .cl-oauth-button-group::after {
+  width: 0% !important;
+}
+
+.cl-component label {
+  @apply text-sm font-normal h-2 mt-2 mb-2 !important;
+}
+
+.cl-component input {
+  @apply border border-black rounded h-2 !important;
+}
+
+.cl-auth-form-link-label {
+  @apply font-bold text-black !important;
+}
+
+.cl-auth-form-link a {
+  @apply underline hover:no-underline !important;
+}
+
+.cl-user-button-popup {
+  @apply border border-black rounded !important;
+}
+
+.cl-user-button-headline {
+  @apply text-2xl font-bold !important;
+}
+
+.cl-user-button-identifier {
+  @apply text-black font-bold !important;
+}
+
+.cl-user-button-avatar {
+  color: black !important;
+}
+
+.cl-component .cl-active-accounts-manager .cl-account-switcher {
+  border-top: 0.125rem solid #111111 !important;
+  border-bottom: 0.125rem solid #111111 !important;
+}
+
+.cl-details span {
+  @apply text-black !important;
+}
+
+.cl-account-switcher-add-button {
+  @apply text-black font-bold !important;
+}
+
+.cl-account-switcher-add-button svg {
+  stroke: #111111 !important;
+}
+
+.cl-otp-input {
+  @apply m-12;
+}
+
+.uploadcare--widget__button, .uploadcare--widget__button_type_open {
+  @apply bg-black text-white font-bold py-2 px-4 rounded mb-2 !important;
+}
